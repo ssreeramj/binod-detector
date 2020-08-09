@@ -6,3 +6,4 @@ my_env/
 
 *.ipynb
 
+__pycache__/
