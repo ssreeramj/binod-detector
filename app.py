@@ -39,6 +39,7 @@ if __name__ == '__main__':
             pie_plot = get_pie_plot(df)
 
             st.subheader('Lets have a look at some random comments of the youtube video')
+            st.info('Hover on the text to see the full text')
             st.dataframe(df.loc[:, 'text'].sample(20))
 
             st.subheader('Here we can see the visualization of common words that \
@@ -47,6 +48,8 @@ if __name__ == '__main__':
 
             st.subheader("Now we see the distribution of comments which have 'BINOD' \
                 in them.")
+            st.warning('If the comment section does not have binod, then the distribution \
+                would show the most common word')
             st.write(pie_plot)
         except Exception as e:
             # st.subheader(e)
