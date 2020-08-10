@@ -2,7 +2,6 @@ my_env/
 
 .env
 
-
 .ipynb_checkpoints/
 
 *.ipynb
